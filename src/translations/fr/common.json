@@ -1,0 +1,16 @@
+{
+    "welcome": {
+        "title": "Bienvenue"
+    },
+    "routes": {
+        "home": "Acceil",
+        "about":"Je uis",
+        "services": "Services",
+        "skills": "Compétences",
+        "education": "Education",
+        "experience": "Experiences",
+        "work": "Travail",
+        "blog": "Blog",
+        "contact": "Contact"
+    }
+}
