@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import common_fr from './translations/fr/common.json';
 import common_en from './translations/en/common.json';
 import './index.css';
@@ -12,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 i18next.init({
   interpolation: { escapeValue: false }, // React already does escaping
-  lng: 'fr', // language to use
+  lng: 'en', // language to use
   // 'common' is our custom namespace
   resources: {
     en: {

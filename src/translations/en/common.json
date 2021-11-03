@@ -1,6 +1,7 @@
 {
     "welcome": {
-        "title": "Welcome"
+        "title": "Welcome",
+        "hello": "Hi! I'm Omar Outabarine"
     },
     "routes": {
         "home": "Home",
@@ -10,7 +11,70 @@
         "education": "Education",
         "experience": "Experience",
         "work": "Work",
-        "blog": "Blog",
         "contact": "Contact"
+    },
+    "home": {
+        "resume": "Resume",
+        "interest1":"I love managing ..",
+        "interest2":"I love learning ..",
+        "experience": "Experience",
+        "skills": "Skills"
+    },
+    "about": {
+        "title":"About us",
+        "subTitle":"Who Am I?",
+        "me": "my education and training has enabled me to acquire a solid foundation and knowledge in software science and engineering , which allows me to be able to carry out a varied number of both business an technical missions. In addition, my internships allowed me to benefit from a real practice, so to develop my skills, to assert my rigour in the work, good interpersonal skills and to develop my ability to adapt and integrate.",
+        "values": "My qualities: ",
+        "valuesList":{
+            "0":{ "icon":"fas fa-users", "title":"Adaptation", "description":"Ouvert aux changement, sait s’adapter et faire évoluer son travail."},
+            "1":{ "icon":"icon-bulb", "title":"Amélioration continue", "description":"Sait se remettre en question, dans une démarche d’amélioration continue."},
+            "5":{ "icon":"fas fa-users", "title":"Ecoute", "description":"Sait écouter et observer pour s’adapter"},
+            "3":{ "icon":"fas fa-users", "title":"Autonomie", "description":"Fait preuve d’autonomie, de rigueur et bonne humeur"},
+            "4":{ "icon":"fas fa-users", "title":"Equipe", "description":"Protège son équipe des nuisances extérieures"},
+            "2":{ "icon":"fas fa-users", "title":"Communication", "description":"Remonte les informations du terrain aux différentes parties prenantes"}
+        }
+    },
+    "services": {
+        "title":"What I do?",
+        "subTitle":"Here are some of my expertise"
+    },
+    "skills": {
+        "subTitle":"My Speciality",
+        "title":"My skills"
+    },
+    "experience":{
+        "nbr": "4",
+        "title": "Work experience",
+        "list": {
+        "experience0": {
+            "title": "Business Analyst & Scrum Master",
+            "dates":"2021-aujourd'hui",
+            "subTitle":"Maif - Refonte et rénovation du SI IARD",
+            "description": 
+            "Assister le client à l’expression des besoins.\n Rédaction des spécifications fonctionnelles détaillées 'User stories'. Mise en place de la stratégie de test. Gestion et suivi des anomalies et activités de reporting. Automatisation des tests fonctionnels. Pilotage de l’équipe de test et validation logiciel.",
+            "tech": " HP-ALM,  Mantis Bugi, SoapUI , Squash,  JAVA 7,  Cucumber, Selenium."
+        },
+        "experience1": {
+            "title": "Pilote de la Recette MOA Globale",
+            "dates":"2019-2021",
+            "subTitle":"Maif - Refonte et rénovation du SI IARD",
+            "description": "Participation au développement de l'application OPERA (Outillons les paiements et Recettes Autrement). Analyse des besoins (User stories), en collaboration avec le Product Owner. Conception des solutions technico fonctionnelles avec les architectes et des Lead BA. Participation et coanimation des cérémonies agiles. Relais du Scrum Master",
+            "tech": "MEGA HOPEX, JAVA 7, BRMS, ALM, Siebel, PostGreSQL, API, COBOL, TIBCO"
+        },
+        "experience2": {
+            "title": "Business Analyst & Scrum Master",
+            "dates":"2018-2020",
+            "subTitle":"Maif - Refonte et rénovation du SI IARD",
+            "description": "Suivi d’une équipe de 17 ETP dédié à l'activité de recette. La préparation de la stratégie de tests et suivre son application. Préparation et animation des cérémonies Agiles. La coordination des activités de tests MOE et MOA. Le reporting d’avancement et production des KPI et Dashboard (mensuels, hebdo et quotidiens)",
+            "tech":"Assyst, JAVA 7, BRMS, Siebel, API, COBOL, TIBCO"
+        },
+        "experience3": {
+            "title": "Business Analyst & QA Test Manager",
+            "dates":"2015-2018",
+            "subTitle":"CDS SNCF Distribution",
+            "description": "Relais du Scrum Master. Maintenance applicative et corrective des applications: DECLA, PAE, GET, 420, 440, ME au sein de la tribu sinistre – SQUAD DECLA. Analyse des incidents de production. Analyse des besoins et conception des solutions technico-fonctionnelles. Réalisation des tests MOE. Gestion des livraisons",
+            "tech":"MEGA HOPEX, JAVA 7, BRMS, ALM, Siebel, PostGreSQL, API, COBOL, TIBCO"
+        }
+      }
     }
 }

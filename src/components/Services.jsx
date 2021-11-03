@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Services() {
+export default function Services(props) {
   return (
     <section className="colorlib-services" data-section="services">
       <div className="colorlib-narrow-content">
@@ -9,21 +9,23 @@ export default function Services() {
             className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated"
             data-animate-effect="fadeInLeft"
           >
-            <span className="heading-meta">What I do?</span>
-            <h2 className="colorlib-heading">Here are some of my expertise</h2>
+            <span className="heading-meta">{props.t('services.subTitle')}</span>
+            <h2 className="colorlib-heading">{props.t('services.title')}</h2>
           </div>
         </div>
         <div className="row row-pt-md">
           <div className="col-md-4 text-center animate-box fadeInUp animated">
             <div className="services color-1">
               <span className="icon">
-                <i className="icon-bulb"></i>
+                <i class="fas fa-hands-helping"></i>
               </span>
               <div className="desc">
-                <h3>Innovative Ideas</h3>
+                <h3>Analyse du besoin</h3>
                 <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
+                  Recueil et analyse des besoins du client. <br />
+                  L'aide à l’expression de ses besoins.
+                  <br />
+                  Préparation des User Stories.
                 </p>
               </div>
             </div>
@@ -31,13 +33,16 @@ export default function Services() {
           <div className="col-md-4 text-center animate-box fadeInUp animated">
             <div className="services color-2">
               <span className="icon">
-                <i className="icon-data"></i>
+              <i class="fas fa-vial"></i>
               </span>
               <div className="desc">
-                <h3>Software</h3>
+                <h3>Test</h3>
                 <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
+                  Préparation de la stratégie de test.
+                  <br />
+                  Gestion des bugs et anomalies.
+                  <br />
+                  Pilotage de l’équipe de test et validation logiciel.
                 </p>
               </div>
             </div>
@@ -45,55 +50,15 @@ export default function Services() {
           <div className="col-md-4 text-center animate-box fadeInUp animated">
             <div className="services color-3">
               <span className="icon">
-                <i className="icon-phone3"></i>
+                <i className="fas fa-chart-line"></i>
               </span>
               <div className="desc">
-                <h3>Application</h3>
+                <h3>Scrum Master </h3>
                 <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box fadeInUp animated">
-            <div className="services color-4">
-              <span className="icon">
-                <i className="icon-layers2"></i>
-              </span>
-              <div className="desc">
-                <h3>Graphic Design</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box fadeInUp animated">
-            <div className="services color-5">
-              <span className="icon">
-                <i className="icon-data"></i>
-              </span>
-              <div className="desc">
-                <h3>Software</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box fadeInUp animated">
-            <div className="services color-6">
-              <span className="icon">
-                <i className="icon-phone3"></i>
-              </span>
-              <div className="desc">
-                <h3>Application</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
+                  Animation des cérémonies Agile.
+                  <br /> Reporting d’avancement.
+                  <br />
+                  Création du dashboard de suivi.
                 </p>
               </div>
             </div>

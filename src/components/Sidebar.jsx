@@ -5,12 +5,14 @@ function Sidebar() {
   let activeCurrencyKey = 'euro';
   let activeCountryKey = 'fr';
   const { t, i18n } = useTranslation('common');
-  const links = [
-    { name: `${t('routes.home')}`, link: '/' },
-    { name: `${t('routes.booking')}`, link: '/booking' },
-    { name: `${t('routes.contact')}`, link: '/contact' },
-    { name: `${t('routes.about')}`, link: '/about' },
-    { name: `${t('routes.blog')}`, link: '/blog' },
+  const routes = [
+    { name: `${t('routes.home')}`, link: 'home' },
+    { name: `${t('routes.about')}`, link: 'about' },
+    { name: `${t('routes.services')}`, link: 'services' },
+    { name: `${t('routes.skills')}`, link: 'skills' },
+    { name: `${t('routes.education')}`, link: 'education' },
+    { name: `${t('routes.experience')}`, link: 'experience' },
+    { name: `${t('routes.contact')}`, link: 'contact' },
   ];
 
   return (
@@ -40,46 +42,15 @@ function Sidebar() {
           <nav id="colorlib-main-menu" role="navigation" className="navbar">
             <div id="navbar" className="collapse" aria-expanded="false">
               <ul>
-                <li className="active">
-                  <a href="#" data-nav-section="home">
-                    Home
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="about">
-                    About
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="services">
-                    Services
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="skills">
-                    Skills
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="education">
-                    Education
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="experience">
-                    Experience
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="work">
-                    Work
-                  </a>
-                </li>
-                <li className="">
-                  <a href="#" data-nav-section="contact">
-                    Contact
-                  </a>
-                </li>
+                {routes.map((route, index) => {
+                  return (
+                    <li key={index}>
+                      <a href={route.link} data-nav-section={route.link}>
+                        {route.name}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </nav>
@@ -120,7 +91,7 @@ function Sidebar() {
                 Made with <i className="icon-heart" aria-hidden="true" /> By{' '}
                 <a href="http://www.fam-front.com">FAM</a>
                 <br></br>
-                Thanks{' '}
+                Thanks to{' '}
                 <a
                   href="https://colorlib.com"
                   target="_blank"

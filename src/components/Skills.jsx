@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Skills() {
+export default function Skills(props) {
   return (
     <section class="colorlib-skills" data-section="skills">
       <div class="colorlib-narrow-content">
